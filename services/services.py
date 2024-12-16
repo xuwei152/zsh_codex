@@ -45,7 +45,7 @@ class OpenAIClient(BaseClient):
         self.config["model"] = self.config.get("model", self.default_model)
         self.client = OpenAI(
             api_key=self.config["api_key"],
-            base_url=self.config.get("base_url", "https://api.openai.com/v1"),
+            base_url=self.config.get("base_url", "https://api.chatanywhere.tech/v1"),
             organization=self.config.get("organization"),
         )
 
